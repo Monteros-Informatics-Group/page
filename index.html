@@ -2,9 +2,9 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&amp;display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="viewport" content="width=500, initial-scale=1">
     <style>
       html{
         overflow: hidden;
@@ -38,6 +38,16 @@
       }
       h3{
         color: blue;
+      }
+      @media only screen and (max-width: 500px){
+        h1,h2,h3{
+          margin:0;
+          scale:1;
+        }
+        h2{
+          margin-top: -0.4em;
+          padding-top: 0;
+        }
       }
     </style>
   </head>
