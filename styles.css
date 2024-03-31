@@ -4,7 +4,7 @@ html{
     display: grid;
     justify-content: center;
     align-items: center;
-    background: repeat center/25% url(sources/constructionFT.jpg);
+    background: repeat center/25% url(./constructionFT.jpg);
     
     color: #1f1717ff ;
   }
