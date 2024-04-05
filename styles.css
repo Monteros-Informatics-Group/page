@@ -5,8 +5,8 @@ html{
     justify-content: center;
     align-items: center;
     background-color: rgb(231, 221, 107);
-    
-    color: #1f1717ff ;
+    color: #1f1717ff;
+    overflow: hidden;
   }
   body{
     width: fit-content;
@@ -29,6 +29,7 @@ html{
   }
   .smgrid{
     margin-top: 2.5em;
+    margin-bottom: 1em;
     display:grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: auto;
@@ -44,21 +45,30 @@ html{
   }
   .smgrid-item:hover{
     scale: 1.2;
-    
   }
   .smicon{
-    margin: auto;
     width: 5.5em;
+    margin: auto;
     height: 5.5em;
     filter: brightness(0) saturate(100%) invert(9%) sepia(2%) saturate(4219%) hue-rotate(324deg) brightness(101%) contrast(98%);
   }
   a{
+    text-decoration: none;
     width: fit-content;
     height: fit-content;
     border-radius: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
- 
+    color: #1f1717ff;
+  }
+  .pitem{
+    background-color: #b9b478ff;
+    transition: 0.4s;
+    border-radius: 0.5em;
+    margin: auto;
+  }
+  .pitem:hover{
+    scale: 1.2;
   }
 @media only screen and (max-width: 800px){
     h1{ 
@@ -69,6 +79,7 @@ html{
       }      
     .smgrid{
         margin-top: 2em;
+        margin-bottom: 0.7em;
     }
     .smgrid-item{
         width: 4.5em;
@@ -93,6 +104,7 @@ html{
       }
     .smgrid{
         margin-top: 1.25em;
+        margin-bottom: 0.3em;
     }
     .smgrid-item{
         width: 3em;
@@ -109,22 +121,29 @@ html{
 }
 @media only screen and (max-width: 300px){
     h1{ 
-        font-size: 1.5em;
+        font-size: 0.75em;
       }
     h2{
-        font-size: 1.1em;
+        font-size: 0.5em;
       }
     .smgrid{
+      margin-top: 0.3em;
+      margin-bottom: -0.3em;
       grid-template-columns: auto auto auto;
     }
     .smgrid-item{
-        width: 2.5em;
-        height: 2.5em;
+        width: 1.7em;
+        height: 1.7em;
         border-radius: 0.5em;
     }
     .smicon{
-        width: 1.2em;
-        height: 1.2em;
+        width: 1em;
+        height: 1em;
+    }
+    .pitem{
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        font-size: 0.5em;
     }
     a{
       border-radius: 0.5em;
