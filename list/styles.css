@@ -161,6 +161,37 @@ html{
       scale: 1.1;
     }
   }
-  @media only screen and (max-width: 700px){
-    
+  @media only screen and (max-width: 500px){
+    h1{
+      font-size: 1.5em;
+    }
+    h2{
+      font-size: 1.75em;
+    }
+    nav{
+      height: 1.75em;
+    }
+    .deco-nav{
+      margin-top: 0.175em;
+      margin-left: 0;
+      height: 1em;
+    }
+    .principal{
+      grid-template-columns: auto;
+      overflow-x: hidden;
+    }
+    .prod-img{
+      height: 20em;
+    }
+    .prod-measures{
+      width: 20em;
+      height: 32em;
+    }
+    h3{
+      font-size: 1em;
+    }
+    .prod-measures:hover{
+      scale: 1;
+    }
   }
+  
