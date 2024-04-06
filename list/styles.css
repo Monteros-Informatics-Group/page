@@ -1,19 +1,21 @@
 html{
     font-family: 'Kanit', sans-serif;
-    height: 100%;
     display: grid;
     justify-content: center;
     background-color: rgb(231, 221, 107);
     color: #1f1717ff;
   } 
   body{
+    display: contents;
     width: fit-content;
     text-align: center;
     z-index: 0;
   }
   nav{
-    position: relative;
-    background-color: #b9b478ff;
+    margin-top: 1em;
+    justify-self: center;
+    position: fixed;
+    background-color: rgb(204, 196, 102);
     border-radius: 2em;
     display: flex;
     z-index: 10;
@@ -22,7 +24,9 @@ html{
     height: 5em;
   }
   .deco-nav{
-    margin: 0.5em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0;
     height: 3em;
   }
   .back-icon-deco{
@@ -33,7 +37,37 @@ html{
     scale: 1.2;
   }
   .principal{
-    margin-top: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1em;
+    margin-top: 7em;
+    margin-bottom: 2em;
+  }
+  .item-prod{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #b9b478ff;
+  }
+  .prod-measures{
+    border-radius: 1em;
+    width: 22em;
+    height: 25em;
+    transition: 0.3s;
+  }
+  .prod-measures:hover{
+    scale: 1.35;
+  }
+  .item-prod:hover{
+    background-color:rgb(220, 238, 63);
+  }
+  .prod-img{
+    border-radius: 1em 1em 0 0;
+    width: -webkit-fill-available;
+    height: 15em;
+  }
+  .buttongrid{
+    display: grid;
+    grid-template-columns: auto auto;
   }
   h1{ 
     font-weight: 600;
@@ -44,8 +78,89 @@ html{
     margin-top: -0.15em;
   }
   h2{
-    font-weight: initial;
-    font-size: 3em;
-    margin: -0.6em;
-    letter-spacing: 0.2em;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.75em; 
+  }
+  h3{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25em; 
+  }
+  .prodbutton{  
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1em;
+    background-color: ;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1f1717ff;
+    font-size: 1.5em;
+  }
+  @media only screen and (min-width: 1500px){
+    .principal{
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  @media only screen and (max-width: 1000px){
+    h1{
+      font-size: 2.4em;
+    }
+    nav{
+      height: 3em;
+    }
+    .deco-nav{
+      margin-top: 0.25em;
+      margin-right: 0.25em;
+      height: 2em;
+    }
+    .principal{
+      grid-template-columns: auto auto;
+      grid-gap: 2em;
+    }
+    .prod-img{
+      height: 10em;
+    }
+    .prod-measures{
+      width: 19em;
+      height: 20em;
+    }
+    h3{
+      font-size: 1.15em;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    h1{
+      font-size: 2.4em;
+    }
+    h2{
+      font-size: 2.75em;
+    }
+    .principal{
+      grid-template-columns: auto;
+    }
+    .prod-img{
+      height: 20em;
+    }
+    .prod-measures{
+      width: 26em;
+      height: 32em;
+    }
+    h3{
+      font-size: 1.5em;
+    }
+    .prod-measures:hover{
+      scale: 1.1;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    
   }
